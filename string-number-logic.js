@@ -43,9 +43,28 @@ const message = 'craft block argon meter bells brown croon droop';
 
 function decode(message){
   let result = '';
-  result += message.slice(0,3);
+  //convert string into an array//
+  message.split(' ');
+  for (let i=0; i < message.length; i++) {
+    if (message[i][0] === 'a') {
+      result += message.charAt([2]);
+    }
+    if (message[i][0] === 'b') {
+      result += message.charAt([3]);
+    }
+    if (message[i][0] === 'c') {
+      result += message.charAt([4]);
+    }
+    if (message[i][0] === 'd') {
+      result += message.charAt([5]); 
+    }
+    else {
+      result += '';
+    }
+  }
   return result;
 
 }
 
 console.log(decode(message));
+
