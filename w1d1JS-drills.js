@@ -14,9 +14,13 @@ function whoAmI(name, age) {
     if (negativeAge) {
       throw new Error('Age cannot be negative');
     }
-    else if (olderAge) {
+    if (olderAge) {
       throw new Error('Age is over 125');
     }
+    if ((name !== typeof string) || (age !== typeof number)) {
+      throw new Error('Argument not valid');
+    }
+
   }
   catch (e){
     //using return will stop the function here; but console log with return the string//
@@ -32,6 +36,8 @@ console.log(berthaOver100);
 //assigning valid function to a variable and logging the output//
 const kaylaW = whoAmI('Kayla', 26);
 
+//typeof logic not working correctly here//
 console.log(kaylaW);
 
-
+// testing typeof logic
+console.log(whoAmI('Kayla', '26'));
