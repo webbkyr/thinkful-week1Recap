@@ -17,20 +17,28 @@ function beyond(num) {
 //   const zero = 0;
 
   switch(true) {
-  case Infinity:
-  case -Infinity:
+  case num === Infinity:
+  case num === -Infinity:
     console.log('And beyond');
     break;
-  case Number.isFinite(num):
+  case num === Number.isFinite(num):
     console.log('To infinity');
     break;
-  case Number.isFinite(-num):
+  case num === Number.isFinite(-num):
     console.log('To negative infinity');
     break;
-  case 0:
+  case num === 0:
     console.log('Staying home');
     break;    
   }
 }
 
-beyond(-500);
+beyond(Infinity);
+
+beyond(-Infinity);
+
+beyond(20);
+
+beyond(-20);
+
+beyond(0);
