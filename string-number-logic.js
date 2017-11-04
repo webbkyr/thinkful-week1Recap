@@ -10,12 +10,6 @@ function jediName(firstName, lastName) {
 //toInfinity
 
 function beyond(num) {
-//   const infinPos = Infinity;
-//   const infinNeg = -Infinity;
-//   const finitePos = Number.isFinite(num);
-//   const finiteNeg = Number.isFinite(-num);
-//   const zero = 0;
-
   switch(true) {
   case num === Infinity:
   case num === -Infinity:
