@@ -27,20 +27,25 @@ function beyond(num) {
   }
 }
 
-beyond(Infinity);
+// beyond(Infinity);
 
-beyond(-Infinity);
+// beyond(-Infinity);
 
-beyond(20);
+// beyond(20);
 
-beyond(-20);
+// beyond(-20);
 
-beyond(0);
+// beyond(0);
 
 //drill 3: cracking the code
 
 const message = 'craft block argon meter bells brown croon droop';
 
 function decode(message){
-    
+  let result = '';
+  result += message.slice(0,3);
+  return result;
+
 }
+
+console.log(decode(message));
