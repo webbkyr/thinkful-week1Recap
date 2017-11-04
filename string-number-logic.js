@@ -1,5 +1,5 @@
 'use strict';
-//JediName 
+//drill 1: JediName 
 
 function jediName(firstName, lastName) {
   return lastName.slice(0,3)+firstName.slice(0,2);  
@@ -7,7 +7,7 @@ function jediName(firstName, lastName) {
 
 // console.log(jediName('Beyonce', 'Knowles'));
 
-//toInfinity
+//drill 2: toInfinity
 
 function beyond(num) {
   switch(true) {
@@ -36,3 +36,11 @@ beyond(20);
 beyond(-20);
 
 beyond(0);
+
+//drill 3: cracking the code
+
+const message = 'craft block argon meter bells brown croon droop';
+
+function decode(message){
+    
+}
