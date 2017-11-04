@@ -8,12 +8,20 @@ function yearOfBirth(age) {
 
 function whoAmI(name, age) {
   const yob = yearOfBirth(age);
+  try {
+    yob;
+    if (yob < 0 || yob > 125) {
+      throw Error( 'invalid age');
+    }
+  }
+  catch (Error){
+    return 'Age cannot be negative or greater than 125';
+  }
   console.log(`Hi, my name is ${name} and I'm ${age} years old.`);
   console.log(`I was born in ${yob}`);
 }
 
 console.log(yearOfBirth(30));
-whoAmI('Kayla', 26);
+whoAmI('Kayla', -2);
 
-//Move the year of birth calculation into a new function.
 
