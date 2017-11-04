@@ -21,10 +21,10 @@ function beyond(num) {
   case num === -Infinity:
     console.log('And beyond');
     break;
-  case num === Number.isFinite(num):
+  case Number.isFinite(num) && num != 0:
     console.log('To infinity');
     break;
-  case num === Number.isFinite(-num):
+  case Number.isFinite(-num) && num != 0:
     console.log('To negative infinity');
     break;
   case num === 0:
