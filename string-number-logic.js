@@ -117,8 +117,10 @@ daysInMonth('February');
 //drill 5: rock paper scissors
 
 function RockPaperScissors(userChoice){
-  var computer = 1 + Math.floor((Math.random()*3));
+  const computer = 1 + Math.floor((Math.random()*3));
   
 }
 
-RockPaperScissors(2);
+console.log(RockPaperScissors(2));
+
+console.log(Math.floor(Math.random()*3+1));
