@@ -1,14 +1,24 @@
 'use strict';
 
+// function average(numbers) {
+//   let i = 0;
+//   let sum = 0;
+//   while (i < numbers.length) {
+//     sum += numbers[i];
+//     i++;
+//   }
+//   return sum/numbers.length;
+// }
+
+//use the forEach method//
 function average(numbers) {
-  let i = 0;
-  let sum = 0;
-  while (i < numbers.length) {
-    sum += numbers[i];
-    i++;
-  }
-  return sum/numbers.length;
+  let sumOfNums = 0;
+  numbers.forEach(num => sumOfNums+=num);
+  return sumOfNums/numbers.length;
+
+
 }
+    
   
   
   
