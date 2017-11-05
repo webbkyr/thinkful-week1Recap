@@ -66,7 +66,7 @@ function decode(message){
   return result;
 }
 
-console.log(decode(message));
+// console.log(decode(message));
 
 //drill 4: days in a month
 
@@ -112,15 +112,57 @@ function daysInMonth(month) {
   }
 }
 
-daysInMonth('February');
+// daysInMonth('February');
 
 //drill 5: rock paper scissors
 
+//Rock beats scissors - a rock can break a pair of scissors
+//Scissors beats paper, because scissors can cut paper
+//Paper beats rock, because a piece of paper can cover a rock//
+
 function RockPaperScissors(userChoice){
   const computer = 1 + Math.floor((Math.random()*3));
+  const rock = 1;
+  const paper = 2;
+  const scissors = 3;
+  if (userChoice === rock && computer === scissors) {
+    return 'Rock vs scissors. You win! A rock can break a pair of scissors.';
+  }
+  else if (userChoice === scissors && computer === paper ) {
+    return 'Scissors vs paper. You win! Scissors can cut paper.';
+  }
+  else if (userChoice === paper && computer === rock) {
+    return 'Paper vs rock. You win! Paper can cover a rock.';
+  }
+  else if (computer === rock && userChoice === scissors) {
+    return 'Rock vs scissors. You lose! A rock can break a pair of scissors.';
+  }
+  else if (computer === scissors && userChoice === paper ) {
+    return 'Scissors vs paper. You lose! Scissors can cut paper.';
+  }
+  else if (computer === paper && userChoice === rock) {
+    return 'Paper vs rock. You lose! Paper can cover a rock.';
+  }
+  else {
+    return 'Tie. Throw again.';
+  }
+//   switch (userChoice === rock ) {
+//   case rock:
+//     console.log('Two rocks. Tie! Throw again.');
+//     break;
+//   case paper:
+//     console.log('Two paper. Tie! Throw again');
+//     break;
+//   case scissors:
+//     console.log('Two scissors. Tie! Throw again.');
+//     break;
+//   }
   
 }
 
-console.log(RockPaperScissors(2));
+console.log(RockPaperScissors(3));
 
-console.log(Math.floor(Math.random()*3+1));
+//returns a numnber between 1 and 3 not counting zero//
+// console.log(Math.floor(Math.random()*3+1));
+
+//1-rock; 2--paper; 3--scissors
