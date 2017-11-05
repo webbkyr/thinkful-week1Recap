@@ -5,9 +5,26 @@
 // You only need to make one calculation and then set up cases for the possible results.
 
 function fizzBuzz(countTo) {
-  // your code here
+//   16
+  for (let i = 0; i < countTo; i++) {
+    switch(countTo) {
+    case i % 15 === 0:
+      i = 'fizzbuzz';
+      break;
+    case i % 5 === 0:
+      i = 'buzz';
+      break;
+    case i % 3 === 0:
+      i = 'fizz';
+      break;
+    default:
+      i;
+    }
+  }
+  return countTo;
 }
   
+console.log(fizzBuzz(16));
   
   
   
