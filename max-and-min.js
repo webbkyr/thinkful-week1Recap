@@ -1,8 +1,15 @@
 'use strict';
-//redo max and min//
 
 function max(numbers) {
-  // your code here
+  let i = 0;
+  let maxNum = 0;
+  while (i < numbers.length) {
+    if (numbers[i]>maxNum) {
+      maxNum = numbers[i];
+    }
+    i++;
+  }
+  return maxNum;
 }
    
    
