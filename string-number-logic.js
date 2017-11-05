@@ -45,7 +45,7 @@ function decode(message){
   let result = ''; 
   let strArray = message.split(' '); 
   for (let i=0; i < strArray.length; i++) {
-    console.log(strArray[i][0]);
+    // console.log(strArray[i][0]);
 
     if (strArray[i][0] === 'a') {
       result += strArray[i].charAt([1]);
@@ -66,7 +66,7 @@ function decode(message){
   return result;
 }
 
-// console.log(decode(message));
+console.log(decode(message));
 
 //drill 4: days in a month
 
@@ -113,3 +113,12 @@ function daysInMonth(month) {
 }
 
 daysInMonth('February');
+
+//drill 5: rock paper scissors
+
+function RockPaperScissors(userChoice){
+  var computer = 1 + Math.floor((Math.random()*3));
+  
+}
+
+RockPaperScissors(2);
