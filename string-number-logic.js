@@ -42,29 +42,31 @@ function beyond(num) {
 const message = 'craft block argon meter bells brown croon droop';
 
 function decode(message){
-  let result = '';
-  //convert string into an array//
-  message.split(' ');
-  for (let i=0; i < message.length; i++) {
-    if (message[i][0] === 'a') {
-      result += message.charAt([2]);
+  let result = ''; 
+  let strArray = message.split(' '); 
+  for (let i=0; i < strArray.length; i++) {
+    console.log(strArray[i][0]);
+
+    if (strArray[i][0] === 'a') {
+      result += strArray[i].charAt([1]);
     }
-    if (message[i][0] === 'b') {
-      result += message.charAt([3]);
+    else if (strArray[i][0] === 'b') {
+      result += strArray[i].charAt([2]);
     }
-    if (message[i][0] === 'c') {
-      result += message.charAt([4]);
+    else if (strArray[i][0] === 'c') {
+      result += strArray[i].charAt([3]);
     }
-    if (message[i][0] === 'd') {
-      result += message.charAt([5]); 
+    else if (strArray[i][0] === 'd') {
+      result += strArray[i][4]; 
     }
     else {
       result += '';
     }
   }
   return result;
-
 }
 
+
 console.log(decode(message));
+
 
