@@ -26,3 +26,25 @@ const characters = [
   createCharacter('Legolas', 'legoolas', 'Elf', 'Woodland Realm', 8, 5)
 ];
 
+characters.push(createCharacter('Arwen Undomiel', 'arwen', 'Half-Elf', 'Rivendell', 6, 11));
+
+// console.log(characters.length);
+
+function findByNickname(characters, nickname) {
+  characters.forEach(function(characters, nickname) {
+  return characters.nickname === nickname; 
+})
+
+
+console.log(findByNickname(characters, 'frodo'));
+
+
+const onlyHobbit = characters.filter(function(characters) {
+  return characters.race === 'Hobbit';
+}
+)
+
+// console.log(onlyHobbit);
+// // const findCharacterByNickname = function(characterArray, nickname) {
+// //   return characterArray.find(character => character.nickname === nickname
+}

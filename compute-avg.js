@@ -15,8 +15,6 @@ function average(numbers) {
   let sumOfNums = 0;
   numbers.forEach(num => sumOfNums+=num);
   return sumOfNums/numbers.length;
-
-
 }
     
   
